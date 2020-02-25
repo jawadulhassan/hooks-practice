@@ -1,11 +1,8 @@
-import React, { useMemo } from "react";
+import React from "react";
 
 function Child(props) {
   const { counter } = props;
-  console.log('Rendered')
-  useMemo(() => {
-    console.log("rendered!", counter);
-  }, [counter]);
+  console.log("Rendered");
 
   return (
     <div style={{ background: "orange" }}>
